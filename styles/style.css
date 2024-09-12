@@ -6,6 +6,7 @@
 
 a {
   color: #2d2d2d;
+  text-decoration: none;
 }
 
 p {
@@ -23,4 +24,152 @@ h4,
 h5,
 h6 {
   margin: 0;
+}
+
+body {
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #b5b5b5;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #b5b5b5;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b5b5b5;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  transition: all 0.5s ease;
+}
+
+/* ======================TopNav======================== */
+.top-nav {
+  background-color: #a8dfe7;
+  text-align: center;
+  padding: 8px 4px;
+  font-weight: 800;
+  font-family: "Roboto";
+  font-size: 15px;
+}
+
+.logo-nav {
+  text-align: center;
+  border-bottom: 1px solid silver;
+  width: 98%;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  background-color: #fff;
+  position: relative;
+}
+.logo-nav .main-logo {
+  width: 150px;
+  z-index: 8;
+  transition: left 0.5s;
+}
+.logo-nav .search-section {
+  position: absolute;
+  right: 10px;
+  top: 25px;
+}
+.logo-nav .search-section ul {
+  list-style: none;
+  display: flex;
+}
+.logo-nav .search-section ul li {
+  margin: 0 0.5rem;
+}
+
+.main-nav {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.main-nav .main-menu {
+  width: 100vw;
+  display: inline-flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.main-nav .main-menu li {
+  margin: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 0;
+}
+.main-nav .main-menu li .mega-menu {
+  opacity: 0;
+  visibility: hidden;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.8rem;
+  border-radius: 10px;
+  max-height: 300px;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  overflow-y: scroll;
+  top: 60px;
+  text-transform: none;
+  transition: all 0.3s ease;
+}
+.main-nav .main-menu li:hover .mega-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.logo-fix {
+  padding-left: 2%;
+  display: none;
+}
+.logo-fix .logoFix {
+  width: 100px;
+}
+
+.search-fix {
+  float: right;
+  padding-right: 3px;
+  display: none;
+}
+.search-fix ul {
+  list-style: none;
+  display: flex;
+}
+.search-fix ul li {
+  margin: 0 1rem;
+}
+
+@media (max-width: 770px) {
+  .main-nav {
+    display: flex;
+    align-items: center;
+  }
+  .main-nav .main-menu {
+    width: auto;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 360px) {
+  .top-nav {
+    padding: 12px 4px;
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=style.css.map */

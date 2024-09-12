@@ -1,0 +1,19 @@
+@media (max-width:770px) {
+    .main-nav {
+        display: flex;
+        align-items: center;
+        .main-menu {
+            width: auto;
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+@media (max-width:360px) {
+    .top-nav {
+        padding: 12px 4px;
+        font-size: 14px;
+    }
+
+}
