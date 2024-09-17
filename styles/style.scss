@@ -244,11 +244,13 @@ body {
                 top: 60px;
                 text-transform: none;
                 transition: all 0.3s ease;
+                z-index: 1;
             }
 
             &:hover .mega-menu {
                 opacity: 1;
                 visibility: visible;
+                z-index: 1;
             }
         }
     }
@@ -274,6 +276,7 @@ body {
         list-style: none;
         display: flex;
         margin-bottom: 0;
+
         li {
             margin: 0 1rem;
         }
@@ -285,12 +288,43 @@ body {
 }
 
 
+/* ======Slider Section======== */
+.carousel-inner {
+    .carousel-item {
+
+        height: 600px !important;
+        overflow: hidden;
+    }
+}
 
 
+/*===== product section =====*/
+.heading {
+    padding: 2rem 0;
 
+    h2 {
+        font-family: "Roboto";
+        font-size: 30px;
+    }
+}
 
+.productCard {
+    position: relative;
+   
+    border: none;
 
+    img {
+        object-fit: cover;
+        
+    }
 
+    .cardContent {
+        margin-top: -50px;
+        color: #000000;
+        opacity: 1;
+        background-color: green;
+    }
+}
 
 
 
