@@ -62,6 +62,7 @@ body {
     position: fixed;
     top: 0;
     transition: all 0.5s ease;
+    z-index: 9;
 }
 
 /* ======================TopNav======================== */
@@ -291,8 +292,6 @@ body {
 /* ======Slider Section======== */
 .carousel-inner {
     .carousel-item {
-
-        height: 600px !important;
         overflow: hidden;
     }
 }
@@ -306,30 +305,70 @@ body {
         font-family: "Roboto";
         font-size: 30px;
     }
+
+    p {
+        font-size: 17px;
+        padding-top: 1rem;
+    }
 }
 
-.productCard {
+.product-card {
     position: relative;
-   
-    border: none;
+    border: 1px solid silver;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
 
     img {
         object-fit: cover;
-        
+
     }
 
-    .cardContent {
-        margin-top: -50px;
-        color: #000000;
-        opacity: 1;
-        background-color: green;
+    .card-title {
+        padding-top: 0.5rem;
+        padding-bottom: 0;
+        margin-bottom: 0;
     }
+
 }
 
+.avatar {
+    display: flex;
+}
 
+.avatar1,
+.avatar2 {
+    width: 100px;
+    aspect-ratio: 1;
+}
 
+.categories {
+    background-color: #e9e9e9;
 
+    h3 {
+        text-align: center;
+        padding-top: 1rem;
+        font-size: 20px;
+        border-bottom: 1px solid silver;
+    }
 
+    .list-of-category {
+        list-style: none;
+        padding-left: 0;
+        height: 310px;
+        overflow: hidden;
+        overflow-y: scroll;
+
+        li {
+            cursor: pointer;
+            font-size: 15px;
+            padding: 10px;
+            background-color: #e9e9e9;
+            border-bottom: 1px solid black;
+        }
+    }
+
+}
 
 
 //Responsive File Always be at end so it will override desktop styles in similar screens
