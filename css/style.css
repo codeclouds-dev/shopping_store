@@ -223,7 +223,7 @@ body {
   transition: all 0.3s ease;
   z-index: 1;
   background-color: #fff;
-  left: 28%;
+  left: 18%;
 }
 .main-nav .main-menu li .mega-menu .choose-category {
   width: 50%;
@@ -254,6 +254,20 @@ body {
   padding: 1rem 0;
 }
 .main-nav .main-menu li .mega-menu .child-box h3 {
+  font-size: 20px;
+}
+.main-nav .main-menu li .mega-menu .assesories-box {
+  width: 240px;
+  aspect-ratio: 1;
+  background: rgba(140, 152, 154, 0.4117647059);
+  border-radius: 10px;
+  margin: 5px;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: center;
+  padding: 1rem 0;
+}
+.main-nav .main-menu li .mega-menu .assesories-box h3 {
   font-size: 20px;
 }
 .main-nav .main-menu li:hover .mega-menu {

@@ -254,7 +254,7 @@ body {
                 transition: all 0.3s ease;
                 z-index: 1;
                 background-color: #fff;
-                left: 28%;
+                left: 18%;
 
                 .choose-category {
                     width: 50%;
@@ -282,6 +282,22 @@ body {
                     width: 240px;
                     aspect-ratio: 1;
                     background: #45bdd869;
+                    border-radius: 10px;
+                    margin: 5px;
+                    overflow: hidden;
+                    cursor: pointer;
+
+                    h3 {
+                        font-size: 20px;
+                    }
+
+                    text-align: center;
+                    padding: 1rem 0;
+                }
+                & .assesories-box {
+                    width: 240px;
+                    aspect-ratio: 1;
+                    background: #8c989a69;
                     border-radius: 10px;
                     margin: 5px;
                     overflow: hidden;
