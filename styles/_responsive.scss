@@ -14,12 +14,21 @@
                 font-size: 12px;
             }
         }
+
+
     }
 
+    .footer {
+        text-align: center;
+
+        ul {
+            text-align: center;
+        }
+    }
 }
 
 @media (max-width:770px) {
-    
+
 
     .search-fix {
         ul {
@@ -35,7 +44,7 @@
         }
 
         .search-section {
-         
+
 
             ul {
                 li {
@@ -50,8 +59,10 @@
 }
 
 @media (max-width:576px) {
-    .search-fix , .logoFix{
-display: none !important;
+
+    .search-fix,
+    .logoFix {
+        display: none !important;
     }
 }
 

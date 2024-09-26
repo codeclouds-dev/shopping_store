@@ -382,6 +382,59 @@ body {
   background: #737171;
 }
 
+.footer {
+  background-color: #202020;
+  color: #fff;
+  padding: 5rem 5rem 1rem 5rem;
+}
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+.footer ul li {
+  margin-bottom: 0.5rem;
+}
+.footer ul li h3 {
+  font-family: "roboto";
+  font-size: 22px;
+  padding-bottom: 1rem;
+}
+.footer ul li a {
+  color: #f2f2f2;
+  font-family: "roboto";
+  font-size: 18px;
+}
+.footer ul li a:hover {
+  color: #035372;
+}
+.footer .logo-footer {
+  filter: invert(1);
+}
+.footer a {
+  color: #fff;
+}
+.footer .newsletter {
+  position: relative;
+}
+.footer .newsletter .form-control {
+  border-radius: 20px;
+}
+.footer .newsletter button {
+  position: absolute;
+  top: 0;
+  height: 38px;
+  right: 0;
+  width: 35px;
+  background: #035372;
+  color: #fff;
+  border-radius: 21px;
+  outline: none;
+  border: none;
+}
+.footer .subscribe {
+  font-size: 20px;
+}
+
 @media (max-width: 850px) {
   .main-nav {
     display: flex;
@@ -396,6 +449,12 @@ body {
   .main-nav .main-menu li {
     margin: 0 1rem;
     font-size: 12px;
+  }
+  .footer {
+    text-align: center;
+  }
+  .footer ul {
+    text-align: center;
   }
 }
 @media (max-width: 770px) {
@@ -414,7 +473,8 @@ body {
   }
 }
 @media (max-width: 576px) {
-  .search-fix, .logoFix {
+  .search-fix,
+  .logoFix {
     display: none !important;
   }
 }

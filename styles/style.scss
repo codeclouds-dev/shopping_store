@@ -450,5 +450,66 @@ body {
 }
 
 
+
+.footer {
+    background-color: #202020;
+    color: #fff;
+    padding: 5rem 5rem 1rem 5rem;
+
+    ul {
+        list-style: none;
+        padding-left: 0;
+
+        li {
+            margin-bottom: 0.5rem;
+            h3 {
+                font-family: 'roboto';
+                font-size: 22px;
+                padding-bottom: 1rem;
+            }
+
+            a {
+                color: #f2f2f2;
+                font-family: 'roboto';
+                font-size: 18px;
+
+                &:hover{
+                    color: $primary;
+                }
+            }
+        }
+    }
+   .logo-footer{
+    filter: invert(1)
+   }
+   a{
+color: #fff;
+   }
+
+   .newsletter{
+    position: relative;
+  .form-control{
+    border-radius: 20px;
+    
+  }
+        button{
+            position: absolute;
+            top: 0;
+            height: 38px;
+            right: 0;
+            width: 35px;
+            background:$primary;
+            color: #fff;
+            border-radius: 21px;
+            outline: none;
+            border: none;  
+    }
+   }
+
+   .subscribe{
+    font-size: 20px;
+   }
+}
+
 //Responsive File Always be at end so it will override desktop styles in similar screens
 @import './_responsive.scss';
