@@ -294,6 +294,7 @@ body {
                     text-align: center;
                     padding: 1rem 0;
                 }
+
                 & .assesories-box {
                     width: 240px;
                     aspect-ratio: 1;
@@ -375,28 +376,63 @@ body {
     }
 }
 
-.product-card {
-    position: relative;
-    border: 1px solid silver;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    text-align: center;
-
-    img {
-        object-fit: cover;
-
+.prod-sect {
+    margin-bottom: 20px;
+    h5 {
+        font-family: "roboto";
     }
 
-    .card-title {
-        padding-top: 0.5rem;
-        padding-bottom: 0;
+    font-family: "roboto";
+
+    ul {
+        list-style: none;
+        display: inline-flex;
         margin-bottom: 0;
     }
 
-    h4 {
-        font-family: 'Roboto';
+    .bi-star-fill {
+        color: #f0b42b;
+        margin-right: 2px;
     }
 
+    .size {
+        li {
+
+            width: 29px;
+            padding: 5px;
+            aspect-ratio: 1;
+            margin-left: 5px;
+            background: rgba(134, 218, 239, 0.3294117647);
+            border: 1px solid #07cdff;
+            margin-top: 0.5rem;
+            cursor: pointer;
+        }
+    }
+
+    .product-card {
+
+        position: relative;
+        border: 1px solid silver;
+        padding: 0rem;
+        margin-bottom: 0.4rem;
+        text-align: center;
+
+        img {
+            object-fit: cover;
+
+        }
+
+        .card-title {
+            padding-top: 0.5rem;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+
+        h4 {
+            font-family: 'Roboto';
+        }
+
+    }
 }
 
 .avatar {
@@ -478,6 +514,7 @@ body {
 
         li {
             margin-bottom: 0.5rem;
+
             h3 {
                 font-family: 'roboto';
                 font-size: 22px;
@@ -489,42 +526,46 @@ body {
                 font-family: 'roboto';
                 font-size: 18px;
 
-                &:hover{
+                &:hover {
                     color: $primary;
                 }
             }
         }
     }
-   .logo-footer{
-    filter: invert(1)
-   }
-   a{
-color: #fff;
-   }
 
-   .newsletter{
-    position: relative;
-  .form-control{
-    border-radius: 20px;
-    
-  }
-        button{
+    .logo-footer {
+        filter: invert(1)
+    }
+
+    a {
+        color: #fff;
+    }
+
+    .newsletter {
+        position: relative;
+
+        .form-control {
+            border-radius: 20px;
+
+        }
+
+        button {
             position: absolute;
             top: 0;
             height: 38px;
             right: 0;
             width: 35px;
-            background:$primary;
+            background: $primary;
             color: #fff;
             border-radius: 21px;
             outline: none;
-            border: none;  
+            border: none;
+        }
     }
-   }
 
-   .subscribe{
-    font-size: 20px;
-   }
+    .subscribe {
+        font-size: 20px;
+    }
 }
 
 //Responsive File Always be at end so it will override desktop styles in similar screens

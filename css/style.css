@@ -319,22 +319,48 @@ body {
   padding-top: 1rem;
 }
 
-.product-card {
+.prod-sect {
+  margin-bottom: 20px;
+  font-family: "roboto";
+}
+.prod-sect h5 {
+  font-family: "roboto";
+}
+.prod-sect ul {
+  list-style: none;
+  display: inline-flex;
+  margin-bottom: 0;
+}
+.prod-sect .bi-star-fill {
+  color: #f0b42b;
+  margin-right: 2px;
+}
+.prod-sect .size li {
+  width: 29px;
+  padding: 5px;
+  aspect-ratio: 1;
+  margin-left: 5px;
+  background: rgba(134, 218, 239, 0.3294117647);
+  border: 1px solid #07cdff;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+.prod-sect .product-card {
   position: relative;
   border: 1px solid silver;
-  padding: 1rem;
-  margin-bottom: 1rem;
+  padding: 0rem;
+  margin-bottom: 0.4rem;
   text-align: center;
 }
-.product-card img {
+.prod-sect .product-card img {
   object-fit: cover;
 }
-.product-card .card-title {
+.prod-sect .product-card .card-title {
   padding-top: 0.5rem;
   padding-bottom: 0;
   margin-bottom: 0;
 }
-.product-card h4 {
+.prod-sect .product-card h4 {
   font-family: "Roboto";
 }
 
