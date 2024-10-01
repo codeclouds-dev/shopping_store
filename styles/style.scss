@@ -652,7 +652,7 @@ body {
 }
 
 .signup-form label {
-padding-top: 1rem;
+    padding-top: 1rem;
     font-size: 15px;
     font-family: 'Roboto';
     font-weight: 400;
@@ -708,16 +708,19 @@ padding-top: 1rem;
 .discounted .fa-circle-check {
     color: #099707;
 }
-.bi-person-circle{
+
+.bi-person-circle {
     cursor: pointer;
 }
-.login{
+
+.login {
     padding: 1rem;
     padding-top: 0;
 }
-.login .row{
-padding: 0.5rem ;
-padding-top: 0;
+
+.login .row {
+    padding: 0.5rem;
+    padding-top: 0;
 }
 
 
