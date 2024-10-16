@@ -144,7 +144,7 @@ body {
   border-radius: 4rem;
   background: #fff;
   align-items: center;
-  justify-content: end;
+  justify-content: center;
   outline: none;
   overflow: hidden;
   transition: 400ms ease-in-out;
@@ -187,6 +187,7 @@ body {
 .logo-nav .search-section ul li .active {
   width: 250px;
   border: 1px solid #888;
+  justify-content: end !important;
 }
 
 .main-nav {
