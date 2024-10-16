@@ -329,6 +329,14 @@ body {
     }
 }
 
+.logo-nav {
+    a {
+        .logoFix {
+            width: 150px;
+        }
+    }
+}
+
 .search-fix {
     float: right;
     padding-right: 3px;
@@ -820,6 +828,33 @@ body {
 
     }
 }
+
+.contact-form {
+    box-shadow: 1px 1px 20px 0px #dfdfdf;
+    padding: 2%;
+    font-family: roboto;
+    margin-top: 3%;
+    margin-bottom: 5%;
+
+    h4 {
+        text-align: center;
+    }
+
+    .card {
+        border: none
+    }
+
+ button {
+        background: #2e898b;
+        border: none;
+        outline: none;
+        padding: 0.5rem 1rem;
+        color: #fff;
+        transition: background 0.9s ease;
+        margin-top: 2%;
+    }
+}
+
 
 //Responsive File Always be at end so it will override desktop styles in similar screens
 @import "./_responsive.scss";
