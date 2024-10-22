@@ -742,6 +742,9 @@ body {
   margin-top: 2%;
 }
 
+.profile-bar {
+  position: relative;
+}
 .profile-bar h1,
 .profile-bar h2,
 .profile-bar h3,
