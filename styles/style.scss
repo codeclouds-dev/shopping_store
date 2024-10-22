@@ -933,6 +933,140 @@ body {
     }
 }
 
+.contents-in-profile {
+
+    .heading-section {
+
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin: 0 auto;
+        background: green;
+        border-radius: 5px;
+        margin: 0.5rem auto;
+        background: linear-gradient(90deg, #93a0ff26 0%, #f5f6ff42 100%, #ffffff00 100%);
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Oswald", sans-serif;
+    }
+
+    h4 {
+        letter-spacing: 2px;
+    }
+
+    .profile-content {
+        padding: 1rem;
+    }
+
+    label {
+        padding: 0.5rem 0;
+    }
+
+    .gender-box {
+        border: 1px solid silver;
+
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        aspect-ratio: 1;
+        flex-direction: column;
+        font-size: 30px;
+        cursor: pointer;
+        border-radius: 5px;
+
+        p {
+            font-size: 15px;
+
+        }
+
+        &.active {
+            background-color: #6eb2ff;
+            color: #fff;
+        }
+
+    }
+
+    .female {
+        margin-left: 1rem;
+    }
+
+    .btn-submit {
+        background-color: #074a97;
+        width: 100px;
+        height: 50px;
+        border-radius: 5px;
+        color: #fff;
+        float: right;
+        border: none
+    }
+
+}
+
+.personal-info {
+    ul {
+        list-style: none;
+
+        h6 {
+            letter-spacing: 2px
+        }
+
+        li {
+            font-size: 14px;
+            padding-top: 2px;
+        }
+
+        .size {
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        span {
+            font-weight: 400;
+        }
+
+        .order-status {
+            margin-top: 5px;
+            height: 20px;
+            font-size: 10px;
+            width: 70px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+        }
+
+        .shipping {
+            border: 1px solid orange;
+            background-color: #ffaa00;
+            color: #ffffff
+        }
+    }
+    .order-card{
+        background-color: #f3f3f340;
+    }
+    .delivered{
+        background-color: #099707;
+        color: #fff;
+    }
+    .ordered{
+        background-color: #970797;
+        color: #fff;
+    }
+    .cancelled{
+        background-color: #970707;
+        color: #fff;
+    }
+}
 
 //Responsive File Always be at end so it will override desktop styles in similar screens
 @import "./_responsive.scss";
