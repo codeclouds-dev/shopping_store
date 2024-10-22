@@ -844,7 +844,7 @@ body {
         border: none
     }
 
- button {
+    button {
         background: #2e898b;
         border: none;
         outline: none;
@@ -852,6 +852,84 @@ body {
         color: #fff;
         transition: background 0.9s ease;
         margin-top: 2%;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+.profile-bar {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Oswald", sans-serif;
+    }
+
+    h6 {
+        letter-spacing: 2px;
+        padding-top: 1rem;
+    }
+
+    p {
+        padding-top: 5px;
+        line-height: 18px;
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+
+    span {
+        color: silver;
+        font-size: 12px;
+    }
+
+    .bg-gradients {
+        background: rgb(226, 226, 226);
+        background: linear-gradient(250deg, rgb(255 255 255) 0%, #eaf5ff96 100%);
+    }
+
+    .profile-section {
+        background: #e2e2e2;
+        background: linear-gradient(250deg, #ffffff 0%, #eaf5ff96 100%);
+        text-align: center;
+        padding: 1rem;
+        margin-bottom: 10px;
+
+        img {
+            width: 60px;
+
+        }
+    }
+
+    ul {
+        padding: 1rem;
+        list-style: none;
+
+        li {
+            font-size: 20px;
+            padding: 0.5rem 0;
+            color: #686868;
+            cursor: pointer;
+
+            .fa {
+                padding-right: 1rem;
+            }
+
+            position: relative;
+        }
+
+        .active {
+            &::before {
+                content: "";
+                position: absolute;
+                width: 5px;
+                height: 30px;
+                background-color: #001180;
+                left: -15px;
+            }
+        }
     }
 }
 

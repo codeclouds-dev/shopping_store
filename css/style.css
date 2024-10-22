@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lilita+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -739,6 +740,65 @@ body {
   color: #fff;
   transition: background 0.9s ease;
   margin-top: 2%;
+}
+
+.profile-bar h1,
+.profile-bar h2,
+.profile-bar h3,
+.profile-bar h4,
+.profile-bar h5,
+.profile-bar h6 {
+  font-family: "Oswald", sans-serif;
+}
+.profile-bar h6 {
+  letter-spacing: 2px;
+  padding-top: 1rem;
+}
+.profile-bar p {
+  padding-top: 5px;
+  line-height: 18px;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+.profile-bar span {
+  color: silver;
+  font-size: 12px;
+}
+.profile-bar .bg-gradients {
+  background: rgb(226, 226, 226);
+  background: linear-gradient(250deg, rgb(255, 255, 255) 0%, rgba(234, 245, 255, 0.5882352941) 100%);
+}
+.profile-bar .profile-section {
+  background: #e2e2e2;
+  background: linear-gradient(250deg, #ffffff 0%, rgba(234, 245, 255, 0.5882352941) 100%);
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 10px;
+}
+.profile-bar .profile-section img {
+  width: 60px;
+}
+.profile-bar ul {
+  padding: 1rem;
+  list-style: none;
+}
+.profile-bar ul li {
+  font-size: 20px;
+  padding: 0.5rem 0;
+  color: #686868;
+  cursor: pointer;
+  position: relative;
+}
+.profile-bar ul li .fa {
+  padding-right: 1rem;
+}
+.profile-bar ul .active::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 30px;
+  background-color: #001180;
+  left: -15px;
 }
 
 @media (max-width: 850px) {
